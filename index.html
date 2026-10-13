@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#0A0A0A">
+  <meta name="theme-color" content="#0B0F19">
   <meta name="description" content="Deepika Sendhav is a Computer Science and Statistics student interested in Python, backend development, APIs, and full-stack web technologies.">
   <meta property="og:type" content="website">
   <meta property="og:title" content="Deepika Sendhav | Developer Portfolio">
@@ -42,27 +42,42 @@
   <main id="main">
     <section class="hero section" id="home" aria-labelledby="hero-title">
       <div class="container hero-grid">
-        <div class="hero-copy" data-reveal>
-          <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> Open to internship opportunities</p>
-          <h1 id="hero-title">Building practical solutions <span>through code.</span></h1>
-          <p class="hero-intro">I'm a Computer Science and Statistics student interested in backend development, Python, APIs, and full-stack web technologies.</p>
-          <ul class="focus-list" aria-label="Areas of focus">
+        <div class="hero-copy">
+          <p class="eyebrow availability" data-reveal><span class="status-dot" aria-hidden="true"></span> Open to internship &amp; entry-level opportunities</p>
+          <h1 id="hero-title" data-reveal>Thoughtful code.<br><span>Practical impact.</span></h1>
+          <p class="hero-intro" data-reveal>I'm Deepika, a B.Sc. Computer Science and Statistics student, Python and FastAPI developer, and MERN stack developer building useful software through coursework and hands-on projects.</p>
+          <ul class="focus-list" aria-label="Areas of focus" data-reveal>
             <li>Python</li>
             <li>FastAPI</li>
             <li>MERN stack</li>
             <li>Statistics and data analysis</li>
           </ul>
-          <div class="hero-actions">
-            <a class="button button-light" href="#projects">View my projects <span aria-hidden="true">↗</span></a>
+          <div class="hero-actions" data-reveal>
+            <a class="button button-light" href="#projects">Explore my projects <span aria-hidden="true">↗</span></a>
+            <a class="button button-outline" href="assets/resume.pdf" download>Download resume <span aria-hidden="true">↓</span></a>
+            <a class="button button-outline" href="https://github.com/deepika-sendhav" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
             <a class="button button-outline" href="#contact">Contact me</a>
           </div>
-          <div class="social-links" aria-label="Social profiles">
+          <div class="social-links" aria-label="Social profiles" data-reveal>
             <a href="https://github.com/deepika-sendhav" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
             <a href="https://www.linkedin.com/in/deepika-sendhav-5a0609332/" target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">↗</span></a>
           </div>
         </div>
 
-        <aside class="profile-note" data-reveal aria-label="Current learning focus">
+        <aside class="profile-note code-panel" data-reveal aria-label="Illustrative FastAPI code snippet and profile details">
+          <div class="editor-topbar" aria-hidden="true">
+            <span class="editor-dots"><i></i><i></i><i></i></span>
+            <span class="editor-filename">hello_api.py</span>
+            <span class="editor-language">PYTHON</span>
+          </div>
+          <pre class="code-snippet"><code><span class="code-keyword">from</span> fastapi <span class="code-keyword">import</span> FastAPI
+
+app <span class="code-punctuation">=</span> FastAPI<span class="code-punctuation">()</span>
+
+<span class="code-decorator">@app.get</span><span class="code-punctuation">(</span><span class="code-string">"/hello"</span><span class="code-punctuation">)</span>
+<span class="code-keyword">def</span> <span class="code-function">hello</span><span class="code-punctuation">():</span>
+    <span class="code-keyword">return</span> <span class="code-punctuation">{</span><span class="code-string">"message"</span><span class="code-punctuation">:</span> <span class="code-string">"Hello, world!"</span><span class="code-punctuation">}</span></code></pre>
+          <div class="note-rule"></div>
           <p class="note-label">CURRENT FOCUS</p>
           <p class="note-title">Learning by building.</p>
           <p class="note-copy">Exploring API design, useful Python applications, and how analytical thinking can make software more thoughtful.</p>
@@ -141,7 +156,7 @@
             <div class="project-detail"><h4>Potential features</h4><p>Validated requests, clear error responses, documented endpoints, and thoughtful API structure.</p></div>
             <ul class="project-tags" aria-label="Technologies"><li>Python</li><li>FastAPI</li><li>REST</li></ul>
             <div class="project-actions">
-              <a class="text-link project-link" data-project-link="code" hidden target="_blank" rel="noopener noreferrer">View code <span aria-hidden="true">↗</span></a>
+              <a class="text-link project-link" data-project-link="code" hidden target="_blank" rel="noopener noreferrer">View source code <span aria-hidden="true">↗</span></a>
               <a class="text-link project-link" data-project-link="demo" hidden target="_blank" rel="noopener noreferrer">Live demo <span aria-hidden="true">↗</span></a>
               <span class="project-link-note">Add a repository URL to enable project links</span>
             </div>
@@ -155,7 +170,7 @@
             <div class="project-detail"><h4>Potential features</h4><p>Responsive interface, API integration, database operations, and end-to-end CRUD functionality.</p></div>
             <ul class="project-tags" aria-label="Technologies"><li>MongoDB</li><li>Express</li><li>React</li><li>Node.js</li></ul>
             <div class="project-actions">
-              <a class="text-link project-link" data-project-link="code" hidden target="_blank" rel="noopener noreferrer">View code <span aria-hidden="true">↗</span></a>
+              <a class="text-link project-link" data-project-link="code" hidden target="_blank" rel="noopener noreferrer">View source code <span aria-hidden="true">↗</span></a>
               <a class="text-link project-link" data-project-link="demo" hidden target="_blank" rel="noopener noreferrer">Live demo <span aria-hidden="true">↗</span></a>
               <span class="project-link-note">Add a repository URL to enable project links</span>
             </div>
@@ -169,7 +184,7 @@
             <div class="project-detail"><h4>Potential features</h4><p>Data cleaning, exploratory analysis, statistical reasoning, and clearly communicated findings.</p></div>
             <ul class="project-tags" aria-label="Technologies"><li>Python</li><li>Statistics</li><li>Data analysis</li></ul>
             <div class="project-actions">
-              <a class="text-link project-link" data-project-link="code" hidden target="_blank" rel="noopener noreferrer">View code <span aria-hidden="true">↗</span></a>
+              <a class="text-link project-link" data-project-link="code" hidden target="_blank" rel="noopener noreferrer">View source code <span aria-hidden="true">↗</span></a>
               <a class="text-link project-link" data-project-link="demo" hidden target="_blank" rel="noopener noreferrer">Live demo <span aria-hidden="true">↗</span></a>
               <span class="project-link-note">Add a repository URL to enable project links</span>
             </div>
@@ -219,6 +234,7 @@
           <a class="contact-item" href="mailto:deepikasendhav75@gmail.com"><span>Email</span><strong>deepikasendhav75@gmail.com</strong><span aria-hidden="true">↗</span></a>
           <a class="contact-item" href="https://www.linkedin.com/in/deepika-sendhav-5a0609332/" target="_blank" rel="noopener noreferrer"><span>LinkedIn</span><strong>deepika-sendhav-5a0609332</strong><span aria-hidden="true">↗</span></a>
           <a class="contact-item" href="https://github.com/deepika-sendhav" target="_blank" rel="noopener noreferrer"><span>GitHub</span><strong>deepika-sendhav</strong><span aria-hidden="true">↗</span></a>
+          <a class="contact-item" href="assets/resume.pdf" download><span>Resume</span><strong>Download PDF</strong><span aria-hidden="true">↓</span></a>
         </div>
       </div>
     </section>
@@ -236,5 +252,6 @@
       </div>
     </div>
   </footer>
+  <a class="back-to-top" href="#home" aria-label="Back to top" hidden>↑</a>
 </body>
 </html>

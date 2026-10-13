@@ -50,6 +50,35 @@ document.querySelectorAll(".project-card").forEach((card) => {
 
 document.querySelector("#copyright-year").textContent = new Date().getFullYear();
 
+const backToTop = document.querySelector(".back-to-top");
+const navigationLinks = document.querySelectorAll(".nav-links a[href^='#']");
+const navigationSections = document.querySelectorAll("main section[id]");
+
+function updateBackToTop() {
+  backToTop.hidden = window.scrollY < 640;
+}
+
+updateBackToTop();
+window.addEventListener("scroll", updateBackToTop, { passive: true });
+
+if ("IntersectionObserver" in window) {
+  const navigationObserver = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (!entry.isIntersecting) return;
+
+      navigationLinks.forEach((link) => {
+        if (link.hash === `#${entry.target.id}`) {
+          link.setAttribute("aria-current", "location");
+        } else {
+          link.removeAttribute("aria-current");
+        }
+      });
+    });
+  }, { rootMargin: "-30% 0px -60% 0px", threshold: 0 });
+
+  navigationSections.forEach((section) => navigationObserver.observe(section));
+}
+
 const revealTargets = document.querySelectorAll("[data-reveal]");
 if ("IntersectionObserver" in window && !window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
   const revealObserver = new IntersectionObserver((entries, observer) => {
